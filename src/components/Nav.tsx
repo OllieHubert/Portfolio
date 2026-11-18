@@ -6,8 +6,8 @@ export function Nav() {
       </a>
       <div className="nav-links">
         <a href="#about">About</a>
+        <a href="#clinic">Georef</a>
         <a href="#projects">Projects</a>
-        <a href="#clinic">Clinic</a>
         <a href="#next">Next</a>
         <a href="#contact">Contact</a>
       </div>

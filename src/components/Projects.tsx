@@ -15,6 +15,49 @@ export function Projects() {
           <article className="project">
             <div className="project-copy">
               <div className="project-meta">
+                <span className="chip lime">work in progress</span>
+                <span className="chip">Mapbox APIs</span>
+                <span className="chip magenta">elevation ranking</span>
+              </div>
+              <h3>Bike Route Generation</h3>
+              <p>
+                Preference-aware cycling route planner: drop a start, set target
+                distance and climb vibe, then generate ranked out-and-back or
+                loop rides on real roads.
+              </p>
+              <ul>
+                <li>
+                  Linked Mapbox API calls for cycling isochrones, directions,
+                  terrain elevation, and basemaps — plus geocoding for home and
+                  search
+                </li>
+                <li>
+                  Candidate routes sampled from the reachable ring, then scored
+                  against distance and elevation preference
+                </li>
+                <li>
+                  Saved rides, sharing, FIT/GPX uploads with heart-rate and power
+                  charts, and a 3D fly-through simulation for the chosen line
+                </li>
+                <li>Still shipping features — the routing core is already fun to ride</li>
+              </ul>
+            </div>
+            <div>
+              <figure className="shot-frame">
+                <img
+                  src="/images/bike-route-mock.jpg"
+                  alt="Bike route generation app mockup showing isochrone and ranked routes on a dark map"
+                />
+              </figure>
+              <p className="shot-caption">
+                Isochrone reach + ranked routes tuned to how hard you want to climb.
+              </p>
+            </div>
+          </article>
+
+          <article className="project reverse">
+            <div className="project-copy">
+              <div className="project-meta">
                 <span className="chip">World Cup pool</span>
                 <span className="chip magenta">30+ active users</span>
                 <span className="chip lime">live results</span>
@@ -67,7 +110,7 @@ export function Projects() {
             </div>
           </article>
 
-          <article className="project reverse">
+          <article className="project">
             <div className="project-copy">
               <div className="project-meta">
                 <span className="chip">dating / dining</span>
@@ -98,49 +141,6 @@ export function Projects() {
             </div>
             <div>
               <RestaurantDemo />
-            </div>
-          </article>
-
-          <article className="project">
-            <div className="project-copy">
-              <div className="project-meta">
-                <span className="chip lime">work in progress</span>
-                <span className="chip">Mapbox APIs</span>
-                <span className="chip magenta">elevation ranking</span>
-              </div>
-              <h3>Bike Route Generation</h3>
-              <p>
-                Preference-aware cycling route planner: drop a start, set target
-                distance and climb vibe, then generate ranked out-and-back or
-                loop rides on real roads.
-              </p>
-              <ul>
-                <li>
-                  Linked Mapbox API calls for cycling isochrones, directions,
-                  terrain elevation, and basemaps — plus geocoding for home and
-                  search
-                </li>
-                <li>
-                  Candidate routes sampled from the reachable ring, then scored
-                  against distance and elevation preference
-                </li>
-                <li>
-                  Saved rides, sharing, FIT/GPX uploads with heart-rate and power
-                  charts, and a 3D fly-through simulation for the chosen line
-                </li>
-                <li>Still shipping features — the routing core is already fun to ride</li>
-              </ul>
-            </div>
-            <div>
-              <figure className="shot-frame">
-                <img
-                  src="/images/bike-route-mock.jpg"
-                  alt="Bike route generation app mockup showing isochrone and ranked routes on a dark map"
-                />
-              </figure>
-              <p className="shot-caption">
-                Isochrone reach + ranked routes tuned to how hard you want to climb.
-              </p>
             </div>
           </article>
         </div>

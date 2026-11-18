@@ -1,0 +1,5 @@
+Imagery sourced from Géologie Québec / SIGÉOM open web map services
+(Gouvernement du Québec) for educational portfolio demonstration.
+CARTE_INTERACTIVE WMS: servicesgeo.atlas.gouv.qc.ca
+Geological Map of Québec documentation:
+https://gq.mines.gouv.qc.ca/documentation_en/additional_information/geological-map-of-quebec/

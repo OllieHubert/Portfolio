@@ -1,3 +1,6 @@
+import { DigitizeLegendShow } from './DigitizeLegendShow'
+import { GeorefGcpShow } from './GeorefGcpShow'
+
 export function Clinic() {
   return (
     <section className="section" id="clinic">
@@ -11,55 +14,6 @@ export function Clinic() {
         </p>
 
         <div className="clinic-layout">
-          <div>
-            <figure className="shot-frame">
-              <img
-                src="/images/georef-digitize-example.jpg"
-                alt="Diagram showing a scanned geologic map georeferenced onto a basemap and digitized into vector layers"
-              />
-            </figure>
-            <p className="shot-caption">
-              Example workflow: scan → georeference → digitize. Illustrative,
-              not clinic source material.
-            </p>
-
-            <div className="pipeline" aria-label="Pipeline stages">
-              <div className="pipe-step">
-                <span className="n">01</span>
-                <div>
-                  <strong>Georeference</strong>
-                  <span>
-                    Tie pixels on a skewed survey scan to real-world
-                    coordinates with control points so the map sits correctly on
-                    Earth.
-                  </span>
-                </div>
-              </div>
-              <div className="pipe-step">
-                <span className="n">02</span>
-                <div>
-                  <strong>Digitize</strong>
-                  <span>
-                    Trace rock units, contacts, and faults into clean vector
-                    layers — geometry you can style, query, and combine with
-                    other geospatial data.
-                  </span>
-                </div>
-              </div>
-              <div className="pipe-step">
-                <span className="n">03</span>
-                <div>
-                  <strong>Automate headless</strong>
-                  <span>
-                    Move the heavy lifting into a headless pipeline designed for
-                    cost — architecture and orchestration that scale without
-                    lighting money on fire.
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div className="about-copy">
             <p>
               Geological maps are packed with signal, but a flat scan is not a
@@ -74,13 +28,53 @@ export function Clinic() {
               a path from prototype notebooks to something that can run
               unattended.
             </p>
-            <p>
-              The payoff is practical: mineral exploration and science teams get
-              searchable geology instead of folders of PDFs, and the process
-              stays cheap enough to run across large map collections.
-            </p>
+          </div>
+
+          <div className="pipeline" aria-label="Pipeline stages">
+            <div className="pipe-step">
+              <span className="n">01</span>
+              <div>
+                <strong>Georeference</strong>
+                <span>
+                  Tie pixels on a scan to real-world coordinates with GCPs so
+                  the sheet sits correctly on a basemap.
+                </span>
+              </div>
+            </div>
+            <div className="pipe-step">
+              <span className="n">02</span>
+              <div>
+                <strong>Digitize</strong>
+                <span>
+                  Trace rock units, contacts, and faults into clean vector
+                  layers — guided by the map legend.
+                </span>
+              </div>
+            </div>
+            <div className="pipe-step">
+              <span className="n">03</span>
+              <div>
+                <strong>Automate headless</strong>
+                <span>
+                  Run it cost-effectively at scale — architecture designed to
+                  stay cheap while maps keep flowing.
+                </span>
+              </div>
+            </div>
           </div>
         </div>
+
+        <div className="clinic-demos">
+          <GeorefGcpShow />
+          <DigitizeLegendShow />
+        </div>
+
+        <p className="shot-caption clinic-credit">
+          Georef demo: USGS Historical Topographic Map Collection (public
+          domain) — San Francisco North 1947. Digitize demo: open Québec SIGÉOM
+          imagery. Educational overlays are illustrative; clinic source stays
+          private.
+        </p>
       </div>
     </section>
   )
